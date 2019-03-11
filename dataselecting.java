@@ -1,6 +1,6 @@
 import java.util.*;
 public class dataselecting {
-  public int partition ( int [] data, int start, int end){
+  public static int partition ( int [] data, int start, int end){
     Random a = new Random();
     int select = start + a.nextInt(end - start);
     int pivot = data[select];
@@ -21,8 +21,6 @@ public class dataselecting {
         }
         front += 1;
       }
-
-
     }
     return end - back;
 
